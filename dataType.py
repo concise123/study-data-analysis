@@ -91,6 +91,8 @@ print(dic1, dic2)
 # print(dic1 + dic2) # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
 # print(dic1 * 2) # TypeError: unsupported operand type(s) for *: 'dict' and 'int'
 print(dic1['고양이'])
+print(dic1.get('고양이'))
+print(dic1.get('말'))
 # print(dic1.고양이) # AttributeError: 'dict' object has no attribute '고양이'
 # print(dic1[0]) # KeyError: 0
 # print(dic1[:]) # TypeError: unhashable type: 'slice'
@@ -105,6 +107,8 @@ print(dic1.items())
 {'고양이': '야옹', '개': '멍멍', '오리': '꽥꽥'}
 {'고양이': '야옹', '개': '멍멍', '오리': '꽥꽥'} {'돼지': '꿀꿀', '소': '음메'}
 야옹
+야옹
+None
 dict_keys(['고양이', '개', '오리'])
 dict_values(['야옹', '멍멍', '꽥꽥'])
 dict_items([('고양이', '야옹'), ('개', '멍멍'), ('오리', '꽥꽥')])
